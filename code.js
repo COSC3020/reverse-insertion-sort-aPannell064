@@ -1,3 +1,12 @@
+//This function was made by altering the one in the README file
 function insertionSortReverse(array) {
-    return array;
+    for(var i = array.length - 2; i >= 0; i--) {
+        var val = array[i];
+        var j;
+        for(j = i; j < array.length - 1 && array[j+1] < val; j++) {
+          array[j] = array[j+1];
+        }
+        array[j] = val;
+      }
+      return array;
 }
