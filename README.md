@@ -25,14 +25,15 @@ some basic testing code that uses [jsverify](https://jsverify.github.io/) in
 
 ## Average-Case Time Complexity of Insertion Sort
 
-In the lectures, we covered that insertion sort has best-case time complexity of
-$\Theta(n)$ and worst-case time complexity of $\Theta(n^2)$. What is the
-average-case time complexity ($\Theta$)?
+The average case time complexity for this function is $\Theta(n^2)$. This is 
+because the inner loop will traverse half the unsorted section of the array
+for each iteration of the outer loop. While the unsorted section of the array
+gets smaller after every iteration, this doesn't matter because after using
+Gauss' Trick to compute half of the sum from 1 to n, we are left with n(n-1)/4, 
+which is still in terms of n^2, just like it is for the worst case time complexity. 
 
-Hint: Think about what happens in each iteration of the loop, and how often the
-loop is executed. Keep in mind that for asymptotic analysis we don't care about
-constant factors.
-
-Describe your reasoning and the conclusion you've come to. Your reasoning is
-most important -- you can easily find the answer, but you need to demonstrate
-that you've understood the concept. Add your answer to this markdown file.
+"I certify that I have listed all sources used to complete this exercise, 
+including the use of any Large Language Models. All of the work is my own, 
+except where stated otherwise. I am aware that plagiarism carries severe 
+penalties and that if plagiarism is suspected, charges may be filed against 
+me without prior notice."
